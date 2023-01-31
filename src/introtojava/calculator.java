@@ -108,7 +108,16 @@ public class calculator {
    } else {
 	   System.out.println("Enter the number to find Reciprocal");
 	   double num = scanner.nextDouble();
-	  
+	   double reciprocal = 1/num;
+	   System.out.println("The Reciprocal of the number " + num + " is = " + reciprocal);
+	   System.out.println("To continue calculation Press 1 else Press any button to exit");
+	   int exit = scanner.nextInt();
+	    if (exit == 1) {
+	     continue;
+	    }else {
+	     scanner.close();
+	     break;
+	    }
 	   
    }
   }
